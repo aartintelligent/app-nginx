@@ -36,7 +36,7 @@ mkdir -p \
 /var/cache/nginx \
 /var/log/nginx \
 /var/lib/nginx; \
-chmod 755 -R \
+chmod 777 -R \
 /etc/nginx \
 /var/cache/nginx \
 /var/log/nginx \
