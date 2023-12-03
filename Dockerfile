@@ -7,7 +7,7 @@ ARG NGINX_WORKER_CONNECTIONS="512"
 ARG NGINX_CONFIGS="/etc/nginx/conf.d/*.conf"
 ARG NGINX_SITE_ENABLED="/etc/nginx/sites-enabled/*.conf"
 ARG NGINX_ACCESS_LOG_FILE="/dev/null"
-ARG NGINX_ERROR_LOG_FILE="/proc/1/fd/1"
+ARG NGINX_ERROR_LOG_FILE="/proc/1/fd/2"
 ARG NGINX_SERVER_NAME="_"
 
 ENV \
