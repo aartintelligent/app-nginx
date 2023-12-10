@@ -11,25 +11,10 @@ docker build . \
 ```
 
 ```shell
-docker build . \
---tag aartintelligent/app-nginx:1.25 \
---build-arg "UID=$(id -u)" \
---build-arg "GID=$(id -g)" \
---build-arg "GIT_COMMIT=$(git rev-parse HEAD)"
-```
-
-```shell
 docker run -d \
 --net host \
 --name app-nginx \
 aartintelligent/app-nginx:latest
-```
-
-```shell
-docker run -d \
---net host \
---name app-nginx \
-aartintelligent/app-nginx:1.23
 ```
 
 ```shell
@@ -65,16 +50,4 @@ docker stop app-nginx
 
 ```shell
 docker rm app-nginx
-```
-
-```shell
-docker login -u aartintelligent
-```
-
-```shell
-docker push aartintelligent/app-nginx:1.25
-```
-
-```shell
-docker push aartintelligent/app-nginx:latest
 ```
