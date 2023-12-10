@@ -12,7 +12,6 @@ docker build . \
 
 ```shell
 docker run -it --rm \
---net host \
 --name app-nginx \
 aartintelligent/app-nginx:latest \
 nginx -v
